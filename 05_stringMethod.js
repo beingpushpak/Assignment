@@ -1,0 +1,66 @@
+console.log(`-------------------Assignment-1-------------------`);
+function stringBasic(){
+    var myDreamCompany = "ABC PRIVATE COMPANY ltd";
+    console.log(`My Dream Company is : ${myDreamCompany}`);
+    var hobby1 = "MUSIC";
+    var hobby2 = "SWIMMING";
+    var hobby3 = "CRICKET";
+    console.log(`My Hobbies are ${hobby1} ${hobby2} ${hobby3}`);
+}
+stringBasic();
+console.log(`-------------------Assignment-2-------------------`);
+console.log(`-------------------Part-1-------------------`);
+function stringHandsOn(){
+    var string = "    Hey you are doing good , so keep it up      ";
+    console.log(`${string}`);
+    console.log(`-------------------Part-2-------------------`);
+    var len = string.length;
+    console.log(`Length of given string is : ${len}`);
+    console.log(`-------------------Part-3-------------------`);
+    var cut = string.trim();
+    console.log(`After trimming the given string the result is : ${cut}`);
+    console.log(`-------------------Part-4-------------------`);
+    var trimLast = string.trimEnd();
+    console.log(`Removing the last Spaces : ${trimLast}`);
+    var lenTrimLast = trimLast.length;
+    console.log(`length after removing end spaces : ${lenTrimLast}`);
+    var lastSpaces = len - lenTrimLast;
+    console.log(`Total spaces at the end of string is : ${lastSpaces}`);
+    var trimStart = string.trimStart();
+    console.log(`string after removing starting spaces : ${trimStart}`);
+    var lenTrimStart = trimStart.length;
+    console.log(`lenght after removing starting spaces : ${lenTrimStart}`);
+    var startSpaces = len - lenTrimStart;
+    console.log(`Total starting spaces of given string is : ${startSpaces}`);
+    var spaces = startSpaces + lastSpaces;
+    console.log(`Total number of given string is : ${spaces}`);
+    console.log(`-------------------Part-5-------------------`);
+    var firstChar = cut.charAt(0);
+    var lastChar = cut.charAt(cut.length-1)
+    console.log(`The first charator of string is : ${firstChar} and the last charator of given string is : ${lastChar}`);
+    console.log(`-------------------Part-6-------------------`);
+    var word = cut.split(' ');
+    console.log(`${word}`);
+    console.log(`total nuber of word is : ${word.length}`);
+    console.log(`-------------------Part-7-------------------`);
+    var index = cut.indexOf("good");
+    console.log(`The index of "good" is : ${index}`);
+    console.log(`-------------------Part-8-------------------`);
+    var part1 = cut.slice(22);
+    console.log(`Slicing the given string from index 22 is : ${part1}`);
+    var part2 = cut.substring(22);
+    console.log(`Substring of given string from index number 22 is : ${part2}`);
+    console.log(`-------------------Part-9-------------------`);
+    var end = cut.endsWith('up');
+    console.log(`Is string ends with word 'up' : ${end}`);
+    console.log(`-------------------Part-10-------------------`);
+    var start = cut.startsWith('Hey');
+    console.log(`Is string start with "Hey" : ${start}`);
+    console.log(`-------------------Part-11-------------------`);
+    var inside = cut.includes('good');
+    console.log(`Is string include 'good' and Ans is ${inside} `);
+    console.log(`-------------------Part-12-------------------`);
+    var change = cut.replace('good','best');
+    console.log(`After replacing good the new string is ${change}`);
+}
+stringHandsOn();
