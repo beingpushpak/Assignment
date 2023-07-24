@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>cssPposition</title>
+</head>
+<style>
+    .container1{
+        background-color: beige;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 3px 3px 5px rgb(0, 0, 0);
+        display: inline-block;
+        margin: 30px;
+        position: relative;
+        top: 50px;
+    }
+    .container2{
+        background-color: beige;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 3px 3px 5px rgb(0, 0, 0);
+        display: inline-block;
+        margin: 30px;
+    }
+    .container3{
+        background-color: beige;
+        border-radius: 10px;
+        text-align: center;
+        width: 300px;
+        box-shadow: 3px 3px 5px rgb(0, 0, 0);
+        display: inline-block;
+        margin: 30px;
+        position: relative;
+        top: 50px;
+    }
+    h2{
+        background-color: #00cc66;
+        margin-top: 0px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 18px 0px;
+        color: rgb(255, 255, 255);
+    }
+    button[type="submit"]{
+        background-color: #00cc66;
+        width: 80%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border: none;
+        color: rgb(255, 255, 255);
+    }
+    p{
+        text-align: left;
+        margin-left: 70px;
+    }
+    .size{
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .right::before{
+        content: "✔️";
+    }
+    .wrong::before{
+        content: "❌";
+    }
+    .bgc{
+        background-color: rgb(255, 0, 0);
+    }
+</style>
+<body>
+    <div class="container1">
+        <h2>Basic</h2>
+        <p class="right">Hosting</p>
+        <p class="wrong">Domain</p>
+        <p class="right">1 GB Space</p>
+        <p class="wrong">Free SSL</p>
+        <p class="right">1 Webside Host</p>
+        <div class="logo">
+            <i class="fa-solid size fa-dollar-sign"></i><sapn class="size">5</sapn>
+        </div>
+        <button type="submit">Buy Now</button>
+    </div>
+    <div class="container2">
+        <h2 class="bgc">Standerd</h2>
+        <p class="right">Hosting</p>
+        <p class="right">Domain</p>
+        <p class="right">1 GB Space</p>
+        <p class="wrong">Free SSL</p>
+        <p class="right">1 Webside Host</p>
+        <div class="logo">
+            <i class="fa-solid size fa-dollar-sign"></i><sapn class="size">10</sapn>
+        </div>
+        <button type="submit">Buy Now</button>
+    </div>
+    <div class="container3">
+        <h2 
+        >Standerd</h2>
+        <p class="right">Hosting</p>
+        <p class="right">Domain</p>
+        <p class="right">1 GB Space</p>
+        <p class="right">Free SSL</p>
+        <p class="right">1 Webside Host</p>
+        <div class="logo">
+            <i class="fa-solid size fa-dollar-sign"></i><sapn class="size">20</sapn>
+        </div>
+        <button type="submit">Buy Now</button>
+    </div>
+</body>
+</html>
