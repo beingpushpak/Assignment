@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleCard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .container{
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 75%;
+    }
+    .img{
+        margin-left: 25px;
+        display: inline-block;
+    }
+    .list{
+        margin: 25px;
+        display: inline-block;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+   .list h2{
+        text-transform: uppercase;
+        font-family: 'Rowdies', cursive;
+        padding-top: 0px;
+        margin-top: 0px;
+        color: rgb(129, 7, 7);
+    }
+    .list ul li{
+        text-transform: capitalize;
+        padding: 10px;
+        list-style-type: none;
+        font-family: 'Lobster', cursive;
+        margin-left: 10px;
+        font-size: larger;
+        color: rgb(68, 17, 94);
+    }
+    .list ul li:hover{
+        background-color: rgb(0, 238, 255);
+    }
+    .list ul li::before{
+        content: "✍️";
+    }
+    .icon{
+        display: inline-block;
+        text-align: center;
+    }
+    .end{
+        margin-left: 100px;
+    }
+    .contain{
+        display: inline-block;
+        text-align: center;
+    }
+    .pwr{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 0.7rem;
+        margin-bottom: 0px;
+        color: coral;
+    }
+    .lab{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        margin-top: 0px;
+        color: orange;
+    }
+    .footer a{
+        margin-right: 30px;
+    }
+    span{
+        color: rgb(129, 7, 7);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="image/officeBoy.png" alt="officeBoy">
+          <div class="end">
+            <div class="icon">
+                <i class="fa-solid fa-2x fa-atom"></i>
+            </div>
+            <div class="contain">
+                <p class="pwr">powered by</p>
+                <p class="lab">JSoftwareLab</p>
+            </div>
+          </div>
+          <div class="footer">
+            <span>Follow me on :</span>
+            <a href="https://www.facebook.com" target="-blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="-blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.github.com" target="-blank"><i class="fa-brands fa-github"></i></a> 
+            <a href="https://www.linkedin.com" target="-blank"><i class="fa-brands fa-linkedin"></i></a>  
+          </div>
+        </div>
+        <div class="list">
+            <h2>compair text online</h2>
+            <ul>
+                <li>compair text online free</li>
+                <li>support large file comparision</li>
+                <li>ingnor order and namespaces</li>
+                <li>side by side diff view</li>
+                <li>get result in tabuler format for quick reference</li>
+                <li>TEXT different tool</li>
+                <li>REST API</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
