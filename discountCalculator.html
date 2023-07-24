@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscountCAlculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <style>
+        *{
+            color: cadetblue;
+            font-family: 'Francois One', sans-serif;
+        }
+        h1{
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .b{
+            text-transform: capitalize;
+            font-weight: bolder;
+        }
+        .a{
+            text-transform: capitalize;
+        }
+        #cal{
+            height: 450px;
+            width: 600px;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin-left: 23px;
+            padding: 20px;
+        }
+        input[type="number"]{
+            width: 100%;
+            height: 35px;
+            border-radius: 7px;
+            /* border-color: cadetblue; */
+        }
+        button[type="submit"]{
+            background-color: #4caf50;
+            width: 100%;
+            height: 45px; 
+            color: white;
+            margin: 20px 0px;
+            border-radius: 10px;
+        }
+        button[type="submit"]:hover{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div id="cal">
+        <h1>discount calculator</h1>
+        <p class="b">Enter the bill amount and discount in percentage</p>
+        <p class="b">bill amount</p>
+        <input type="number" placeholder="Enter Bill Amount" required>
+        <p class="b">discount percentage</p>
+        <input type="number">
+        <button type="submit">Calculate</button>
+        <p class="a">total discount amount</p>
+    </div>
+</body>
+</html>
