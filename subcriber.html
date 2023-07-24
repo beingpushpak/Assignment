@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscriber</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: aliceblue;
+    }
+    .container{
+        background-color: #fff;
+        height: 601px;
+        width: 450px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px black;
+    }
+    .main{
+        border-bottom: 0.5px solid rgb(235, 215, 215);
+        padding: 0 10px 10px 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight:500;
+    }
+    .containt p{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #42a4f5;
+        padding: 20px;
+        border-radius: 10px;
+        color: rgb(219, 255, 219)
+    }
+    p{
+        color: black;
+    }
+    .email{
+        font-family: 'Open Sans', sans-serif;
+    }
+    .reason{
+        font-family: 'Open Sans', sans-serif;
+    }
+    input[type="email"]{
+        height: 40px;
+        width: 100%;
+        background-color:beige;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .email::after{
+        content: " * ";
+        color: red;
+    }
+    textarea{
+        background-color:beige;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    button[type="submit"]{
+        background-color:rgb(235, 235, 157);
+        border: none;
+        border-radius: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 30px;
+       float: right;
+       padding: 11px;
+    }
+</style>
+<body>
+   <form>
+    <div class="container">
+        <p class="main">Subscriber</p>
+        <div class="containt">
+            <p>We're sorry to see you go,but hey,no hard feelings,hopefully wew will see you back one day.
+                Please fill in email address in oredr to unsubscribe from the list.
+                you wiil receive an email to confirm your unsubscription,just to make sure this not an accident or somebody tries to unsubscribe you.
+            </p>
+        </div>
+        <p class="email">Email</p>
+        <input type="email" placeholder="@gmail.com"  required>
+        <p class="reason">Unsubscribe reason</p>
+        <textarea name="TEXT" placeholder="Unsubscribe reason"  rows="2" cols="42"></textarea>
+        <button type="submit">Unsubscribe</button>
+    </div>
+   </form>
+</body>
+</html>
