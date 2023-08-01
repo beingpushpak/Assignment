@@ -13,6 +13,20 @@ function vowel(str){
     console.log(`the total numbers vowels in "${str}" is :${count}`);
 }
 vowel("I am good IT developer");
+console.log(`-------------------using while loop----------------`);
+function swar(str){
+    let i=0;
+    let count = 0;
+while (i<=str.length-1) {
+    let chr = str.charAt(i);
+    if(chr=="a"|| chr=="A"|| chr=="e"||chr=="E"|| chr=="i"|| chr=="I"|| chr=="o"|| chr=="O"|| chr=="u"|| chr=="U"){
+        count = count+1;
+    }
+    i++;
+}
+console.log(`given String ${str} and vawels are ${count}`);
+}
+swar("I am good IT developer")
 console.log(`---------------------------Part-2--------------------------------`);
 function sum(){
     let add = 0;
