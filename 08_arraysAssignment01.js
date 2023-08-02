@@ -25,10 +25,16 @@ arrayFruites.splice(4,0,"Dragon Fruite");//slpice (4,0,"") means at index 4 add 
 console.log(`after adding "Dragon fruite before second last"`);
 console.log(arrayFruites);
 console.log(`------------------------Part-6-------------------------`);
+let num = arrayFruites.indexOf("Orange");
+console.log(`Index of orange is ${num}`);
+arrayFruites.splice(2,1,"Kiwi");//which means At index no 2 delete 1 charator and add kiwi 
+console.log(`After replacing "Orange" with "kiwi"`);
+console.log(arrayFruites);
+console.log(`------------------------Part-7-------------------------`);
 let mmodif = arrayFruites.slice(1,4);
 console.log(`After slicing from 1 to 4 result is :`);
 console.log(mmodif);
-console.log(`------------------------Part-7-------------------------`);
+console.log(`------------------------Part-8-------------------------`);
 let last = arrayFruites.length-1;
 let lastChr = arrayFruites[last];
 let last1 = arrayFruites.length-2;
