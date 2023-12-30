@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise Time!</title>
+</head>
+<body>
+    <main>
+        <div id="overview">
+            <h1>HTML & Javascript are crucial technologies</h1>
+            <p>The web would not work without them...</p>
+        </div>
+        <div id="advantage">
+            <ul>
+                <li>Flexible</li>
+                <li>Available</li>
+                <li>Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        console.log(`----------------------mainHeading-----------------------------`);
+        // const mainHeading = document.body.children[0].children[0].children[0];
+         const mainHeading = document.getElementById('overview').children[0].innerHTML;
+        console.log(mainHeading);
+
+        console.log(`----------------------secondAdvantage-----------------------------`);
+        const secondAdvantage = document.getElementById('advantage').children[0].children[1].textContent
+        console.log(secondAdvantage);
+
+        console.log(`----------------------advdiv-----------------------------`);
+        const advdiv = document.querySelector('#advantage')
+        console.log(advdiv);
+    </script>
+</body>
+</html>
